@@ -10,6 +10,7 @@ class ProductSerializer(serializers.ModelSerializer):
         model = Product
         fields = '__all__'
 
+
 class ProductListDetailSerializer(serializers.ModelSerializer):
     brand = BrandSerializer()
     category = CategorySerializer()

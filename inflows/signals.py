@@ -9,11 +9,11 @@
 #         if instance.quantity > 0:
 #             product = instance.product
 #             product.quantity += instance.quantity
-#             product.save()          
+#             product.save()
 
 # @receiver(signal=post_delete, sender=Inflow)
 # def inflow_deletion_update_product_quantity(sender, instance, **kwargs):
 #         product = instance.product
 #         if product.quantity > 0:
 #             product.quantity -= instance.quantity
-#             product.save()  
+#             product.save()

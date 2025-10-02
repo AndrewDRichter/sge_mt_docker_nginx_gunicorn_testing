@@ -5,6 +5,7 @@ from rest_framework.validators import UniqueValidator
 
 User = get_user_model()
 
+
 class UserSerializer(serializers.ModelSerializer):
     username = serializers.CharField(
         validators=[UniqueValidator(queryset=User.objects.all(), message="Username já existe")]

@@ -27,16 +27,16 @@ class OnlyControlTenantAdmin(admin.ModelAdmin):
     def has_module_permission(self, request):
         return self._allowed(request)
 
-    def has_view_permission(self, request, obj = ...):
+    def has_view_permission(self, request, obj=...):
         return self._allowed(request)
 
     def has_add_permission(self, request):
         return self._allowed(request)
 
-    def has_change_permission(self, request, obj = ...):
+    def has_change_permission(self, request, obj=...):
         return self._allowed(request)
 
-    def has_delete_permission(self, request, obj = ...):
+    def has_delete_permission(self, request, obj=...):
         return self._allowed(request)
 
 

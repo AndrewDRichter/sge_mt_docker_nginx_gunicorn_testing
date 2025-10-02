@@ -1,3 +1,4 @@
 .env
 ativa.bat
 __pycache__
+.env*
