@@ -30,6 +30,7 @@ DEBUG = bool(os.environ.get('DEBUG') == 'True')
 # ALLOWED_HOSTS = ['platform.localhost', 'localhost', 'aromas.localhost', 'leandrinho.localhost']
 ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS').split(' ')
 
+CORS_ORIGIN_ALLOW_ALL = bool(os.environ.get('DJANGO_CORS_ORIGIN_ALLOW_ALL') == 'True')
 
 CONTROL_TENANT_SCHEMA = "platform"                # <- escolha o nome do seu tenant de controle
 PLATFORM_ADMIN_GROUP = "platform_admins"
@@ -42,6 +43,7 @@ SHARED_APPS = (
     'tenants',
     #####
     'entity_classes',
+    'corsheaders',
 )
 
 TENANT_APPS = (
